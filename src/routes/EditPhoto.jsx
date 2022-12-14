@@ -41,7 +41,7 @@ const EditPhoto = () => {
           }),
         }
       );
-      const responseJson = await response.json();
+      await response.json();
       navigate("/photos");
     } catch (error) {
       setError(error);

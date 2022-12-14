@@ -22,7 +22,7 @@ const Photos = () => {
 
   useEffect(() => {
     setLoading(true);
-    if (sort == "asc") {
+    if (sort === "asc") {
       if (!submited) {
         fetch(
           "https://gallery-app-server.vercel.app/photos?_sort=id&_order=asc"
